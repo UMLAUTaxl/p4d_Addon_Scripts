@@ -35,6 +35,12 @@ $ sudo pip install paho-mqtt
 ```
 
 #### Einrichtung des Scripts
+##### P4d vorbereiten
+In Setup -> Konfiguration -> MQTT -> Zusätzliche sensor Topics p4d2mqtt/s3200/request hinzufügen, so dass es insgesamt so aussieht:
+```
+p4d2mqtt/w1/#, p4d2mqtt/arduino/out, p4d2mqtt/s3200/request
+```
+
 ##### Adressen auslesen
 Zur korrekten Ausführung des Scripts müssen anschließend noch die Adressen des Pelletbefüllzeiten herausgefunden werden.
 Dies kann durch den Befehl
